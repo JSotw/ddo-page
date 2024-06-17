@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background: #402211;
+  transition: width 0.4s ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
