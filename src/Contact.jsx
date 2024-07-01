@@ -79,6 +79,17 @@ const Contact = () => {
                             required
                         />
                     </div>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="descripcion">
+                            Descripción
+                        </label>
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            maxLength="500"
+                        />
+                    </div>
                     <div className="flex items-center justify-between">
                         <button
                             type="submit"
